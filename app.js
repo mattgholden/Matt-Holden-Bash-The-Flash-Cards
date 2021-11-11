@@ -1,7 +1,7 @@
 //console.log("Lets Play")
 
 
-//create 3 cards front and back
+//create 3 cards front and back for each category
 //on-click to select cards
 const testCards = {
     

@@ -12,30 +12,91 @@ body{
 }
 
 .container{
-   display: flex;
+   display: grid;
    justify-content: space-between;
    column-gap: 10px;
    row-gap: 15px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 150px;
+   grid-gap: 1rem;
    /* grid-template-columns: 20% 20% 20%;
    grid-template-rows: 20% 20% 20%;  */
 }
 
-.flash-card{
+.flash-card1{
     /* height: 100%; */
-    background: Blue;
-    display: grid;
+    background: white;
+    border: 10px blue;
     border-radius: 4px;
-    grid-template-columns: 250px 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr;
-    grid-gap: 1rem;
+    grid-column: 1/1;
+    grid-row: 1/2;
 }
 
-.front1{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.front2{
+.flash-card2{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
     grid-column: 2/2;
-    grid-row: 2/2;
+    grid-row: 1/2;
 }
+
+.flash-card3{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 3/3;
+    grid-row: 1/2;
+}
+
+.flash-card4{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.flash-card5{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+
+.flash-card6{
+    background: Blue;
+    outline: 5px white;
+    border-radius: 4px;
+    grid-column: 3/3;
+    grid-row: 2/3;
+}
+
+.flash-card7{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+
+.flash-card8{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+.flash-card9{
+    background: Blue;
+    border: 5px white;
+    border-radius: 4px;
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+.button{
+    align-items: right;
+}
+
