@@ -34,7 +34,8 @@ body{
     column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px;
-    transition: transform;
+    /* transition: transform 2s;
+    transform-style: preserve-3d; */
 }
 
 /* div.Category{
@@ -44,11 +45,11 @@ body{
     width: 25%;
     background-color: black;
     color: White;
-    
-
 } */
+
 .flipped{
     display: none;
+    transform: rotateY(180deg);
 }
 
 
@@ -69,7 +70,7 @@ body{
     /* display: none; */
     background: white;
     border-radius: 4px;
-    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
 }
 
 
