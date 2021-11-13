@@ -34,9 +34,10 @@ body{
     column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px;
+    transition: transform;
 }
 
-div.Category{
+/* div.Category{
     height: 100%;
     display: flex; 
     flex-direction: row-reverse;
@@ -45,10 +46,13 @@ div.Category{
     color: White;
     
 
+} */
+.flipped{
+    display: none;
 }
 
+
 .flash-card1{
-    /* height: 100%; */
     background: blue;
     border: 10px white;
     border-radius: 4px;
@@ -56,19 +60,33 @@ div.Category{
     grid-row: 1/2;
 }
 
+ /* .container:hover .flash-card1{
+    transform: rotateY(180deg);
+} */
 
 .back1{
-    transform: rotateY(180deg);
-    display: none;
+    height: 100%;
+    /* display: none; */
     background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
 }
 
-.flash-card2{
+
+ .flash-card2{
     background: Blue;
     border: 5px white;
     border-radius: 4px;
     grid-column: 2/2;
     grid-row: 1/2;
+}
+
+.back2{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
 }
 
 .flash-card3{
@@ -77,6 +95,14 @@ div.Category{
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+}
+
+.back3{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
 }
 
 #CSS{
@@ -95,6 +121,14 @@ div.Category{
     grid-row: 1/2;
 }
 
+.back4{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
+}
+
 .flash-card5{
     background: Blue;
     border: 5px white;
@@ -103,12 +137,28 @@ div.Category{
     grid-row: 1/2;
 }
 
+.back5{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
+}
+
 .flash-card6{
     background: Blue;
     outline: 5px white;
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+}
+
+.back6{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
 }
 
 #JavaScript{
@@ -127,6 +177,14 @@ div.Category{
     grid-row: 1/2;
 }
 
+.back7{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
+}
+
 .flash-card8{
     background: Blue;
     border: 5px white;
@@ -135,12 +193,28 @@ div.Category{
     grid-row: 1/2;
 }
 
+.back8{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
+}
+
 .flash-card9{
     background: Blue;
     border: 5px white;
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+}
+
+.back9{
+    height: 100%;
+    /* display: none; */
+    background: white;
+    border-radius: 4px;
+    /* transform: rotateX(180deg); */
 }
 
 .box{
