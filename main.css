@@ -6,14 +6,16 @@ h1{
 }
 
 body{
-     background-color: black;  
-     margin: 0;
+    background-image: url("Bash1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;  
+    margin: 0;
     /* background-image: url(Bash1.png);  */
     cursor: pointer;
     font-family: 'Red Hat Mono', monospace;
     position: relative;
     min-width: 0;
-
 }
 
 .container{
@@ -55,10 +57,11 @@ body{
 
 .flash-card1{
     background: blue;
-    border: 10px white;
+    border: 10px red;
     border-radius: 4px;
     grid-column: 1/1;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
  /* .container:hover .flash-card1{
@@ -80,6 +83,7 @@ body{
     border-radius: 4px;
     grid-column: 2/2;
     grid-row: 1/2;
+    padding: 6px;
 }
 
 .back2{
@@ -96,6 +100,7 @@ body{
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back3{
@@ -120,6 +125,7 @@ body{
     border-radius: 4px;
     grid-column: 1/1;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back4{
@@ -136,6 +142,7 @@ body{
     border-radius: 4px;
     grid-column: 2/2;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back5{
@@ -152,6 +159,7 @@ body{
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back6{
@@ -176,6 +184,7 @@ body{
     border-radius: 4px;
     grid-column: 1/1;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back7{
@@ -192,6 +201,7 @@ body{
     border-radius: 4px;
     grid-column: 2/2;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back8{
@@ -208,6 +218,7 @@ body{
     border-radius: 4px;
     grid-column: 3/3;
     grid-row: 1/2;
+    padding: 6px; 
 }
 
 .back9{
@@ -222,3 +233,18 @@ body{
     align-items: right;
 }
 
+.button{
+    margin: 0 80%; 
+    padding: 1%;
+    border-radius: 50%;
+    font-family: 'Red Hat Mono', monospace;
+    text-align: left;
+}
+
+.buttonCorrect{
+    background-color: #0BDA51;
+}
+
+.buttonIncorrect{
+    background-color: #FB0606;
+}
