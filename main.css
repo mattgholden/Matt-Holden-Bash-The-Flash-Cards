@@ -40,15 +40,6 @@ body{
     transform-style: preserve-3d; */
 }
 
-/* div.Category{
-    height: 100%;
-    display: flex; 
-    flex-direction: row-reverse;
-    width: 25%;
-    background-color: black;
-    color: White;
-} */
-
 .flipped{
     display: none;
     transform: rotateY(180deg);
@@ -231,6 +222,11 @@ body{
 
 .box{
     align-items: right;
+}
+
+.answers{
+    font: white;
+    font-family: 'Red Hat Mono', monospace;
 }
 
 .button{
