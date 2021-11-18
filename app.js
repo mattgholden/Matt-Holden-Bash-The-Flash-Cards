@@ -12,31 +12,27 @@ const bashFlashCards = {
         // console.log(bashFlashCards.correctAnswer)
         document.querySelectorAll('.buttonCorrect').forEach(button => button.addEventListener('click', bashFlashCards.buttonClickCorrect))
         document.querySelectorAll('.buttonIncorrect').forEach(button => button.addEventListener('click', bashFlashCards.buttonClickIncorrect))
-       
-        while(this.correctAnswer < 9){
-        this.studyBegin()
-        this.buttonClickCorrect()
-        this.buttonClickIncorrect()
         this.flipCard()
-        this.checkForWin()
-        }
     },
 
-    studyBegin: function flipCard (e){
-//FLIP CARDs front and back function
-    // console.log(e.target.children)
-            e.currentTarget.children[0].classList.toggle('flipped')
-            e.currentTarget.children[1].classList.toggle('flipped')
-        },
+//     studyBegin: function flipCard (e){
+// //FLIP CARDs front and back function
+//     // console.log(e.target.children)
+//             
+//         },
 
           flipCard: function () {
             //   console.log(flipCard)
-              document.querySelectorAll('.card').forEach(card => card.addEventListener('click', bashFlashCards.flipCard))   
+              document.querySelectorAll('.card').forEach(card => card.addEventListener('click', (e) => {
+                e.currentTarget.children[0].classList.toggle('flipped')
+                e.currentTarget.children[1].classList.toggle('flipped')
+              }))   
             },
  //BUTTONS to mark correct and incorrect
             buttonClickCorrect: function () {
                 // bashFlashCards.correctAnswer += 1
                 alert(`Your answer is correct! Your score is ${bashFlashCards.correctAnswer +=1}.`)
+                bashFlashCards.checkForWin()
             },
             buttonClickIncorrect: function () {
             // bashFlashCards.incorrectAnswer == 0
@@ -44,8 +40,9 @@ const bashFlashCards = {
             },
 
     checkForWin: function (){
-        if (correctAnswer == 9) {
-        alert(`You answered all 9 cards, correctly.  You passed!!!`)
+        console.log(this.correctAnswer)
+        if (this.correctAnswer == 9) {
+        alert(`You answered all 9 cards, correctly.  You're going to ace that test!!!`)
         }   
     }
 }
