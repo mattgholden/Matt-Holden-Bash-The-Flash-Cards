@@ -1,42 +1,63 @@
 //console.log("Lets Play")
-// const bashFlashCards = {
-    let correctCard = '.buttonCorrect' === 0
-    let incorrectCard = '.buttonIncorrect' == 9
+const bashFlashCards = {
+    correctAnswer: 0,
+    incorrectAnswer: 0,
+    //  incorrectCard: '.buttonIncorrect' == 9
 
 //Begin/opening for game
+//Did you answer correctly? Click the correct button.  Did you answer incorrectly?  Click the incorrect button.
 
+    start: function() {
+        alert(`Start Studying! Pick a card and click to review the definition.  Did you answer correctly?  Push the "Correct" button.  Did you answer incorrectly? Push the "Incorrect" button.`)
+        // console.log(bashFlashCards.correctAnswer)
+        document.querySelectorAll('.buttonCorrect').forEach(button => button.addEventListener('click', bashFlashCards.buttonClickCorrect))
+        document.querySelectorAll('.buttonIncorrect').forEach(button => button.addEventListener('click', bashFlashCards.buttonClickIncorrect))
+       
+        while(this.correctAnswer < 9){
+        this.studyBegin()
+        this.buttonClickCorrect()
+        this.buttonClickIncorrect()
+        this.flipCard()
+        this.checkForWin()
+        }
+    },
 
-    // start: function(){
-    //     alert(`Start Studying`)
-    //     while(this.correctCard < 9){
-    //     this.studyBegin()
-    //     }
-    // }
-
-    // studyBegin: function(){
-
-    //FLIP CARDs front and back function
-    function flipCard(e){
+    studyBegin: function flipCard (e){
+//FLIP CARDs front and back function
     // console.log(e.target.children)
-        e.currentTarget.children[0].classList.toggle('flipped')
-        e.currentTarget.children[1].classList.toggle('flipped')
-    }
-    // console.log(flipCard)
-        document.querySelectorAll('.card').forEach(card => card.addEventListener('click', flipCard))
+            e.currentTarget.children[0].classList.toggle('flipped')
+            e.currentTarget.children[1].classList.toggle('flipped')
+        },
 
+          flipCard: function () {
+            //   console.log(flipCard)
+              document.querySelectorAll('.card').forEach(card => card.addEventListener('click', bashFlashCards.flipCard))   
+            },
  //BUTTONS to mark correct and incorrect
+            buttonClickCorrect: function () {
+                // bashFlashCards.correctAnswer += 1
+                alert(`Your answer is correct! Your score is ${bashFlashCards.correctAnswer +=1}.`)
+            },
+            buttonClickIncorrect: function () {
+            // bashFlashCards.incorrectAnswer == 0
+                alert(`Your answer is incorrect.  You score remains ${bashFlashCards.incorrectAnswer = bashFlashCards.correctAnswer}.`)
+            },
+
+    checkForWin: function (){
+        if (correctAnswer == 9) {
+        alert(`You answered all 9 cards, correctly.  You passed!!!`)
+        }   
+    }
+}
+bashFlashCards.start()   
+
+
+//BUTTONS to mark correct and incorrect
     // function clickButton(e){
     //     e.currentTarget.children[0].buttonClick.toggle('click') 
     //     e.currentTarget.children[1].buttonClick.toggle('click')
     // }
-    // console.log(clickButton)
-        document.querySelectorAll('.buttonCorrect').forEach(button => button.addEventListener('click', function (){
-            alert(`Your answer is correct! Your score is ${correctCard += 1}.`)
-        }))
-
-        document.querySelectorAll('.buttonIncorrect').forEach(button => button.addEventListener('click', function (){
-            alert(`Your answer is incorrect.  You have ${incorrectCard -= 1} more turns.`)
-        }))
+     // console.log(clickButton)
 
         //  if (correctCard <= 9)
 
@@ -54,14 +75,7 @@
         //anynumber )
 
 
-
-// bashFlashCards.start()        
-
-
 //Connect the left and right arrow keys for flipping through cards
-
-
-
 
 //if card is on front left arrow key to move to back
 //if card is on back right arrow key to move to front
