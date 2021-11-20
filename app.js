@@ -21,7 +21,7 @@ const bashFlashCards = {
 
     //Button Correct
     buttonClickCorrect: function () {
-        alert(`Your answer is correct! Your score is ${bashFlashCards.correctAnswer +=1}.`)
+        alert(`Your answer is correct! Your score is ${bashFlashCards.correctAnswer +=1} points.  Answer all 9 correctly to pass!`)
         bashFlashCards.checkForWin()
     },
 
