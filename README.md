@@ -7,7 +7,7 @@ Introduction
 ------------
 Flash Cards! A great study tool used for many years.  Now there is a web application that you can put your basic software engineering knowledge to the test.  I introduce to you,
 "Bash! The Flash Cards" not only because it rhymes, but because it is also related to software engineering 😎.  Are you looking to get ready for a HTML, CSS, and JavaScript
-test?  Well look no further!  This was built as my first project in General Assembly's Software Engineering Immersive Course.
+test?  Well look no further!  This was built as my first project in General Assembly's Software Engineering Immersive Course. https://mattgholden.github.io/Matt-Holden-Bash-The-Flash-Cards/
 
 Technologies Used
 -----------------
