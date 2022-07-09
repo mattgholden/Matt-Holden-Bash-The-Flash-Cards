@@ -67,6 +67,7 @@ body{
     opacity: 0.90; 
 }
 
+/* Look into transition */
 .flash-card1:hover{
     opacity: 1;
 }
