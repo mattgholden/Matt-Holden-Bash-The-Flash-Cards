@@ -12,6 +12,7 @@ const bashFlashCards = {
     },
 
     //Flip Cards
+    //DOM event listener
     flipCard: function () {
         document.querySelectorAll(`.card`).forEach(card => card.addEventListener(`click`, (e) => {
             e.currentTarget.children[0].classList.toggle(`flipped`)
@@ -40,3 +41,4 @@ const bashFlashCards = {
 
 //Call the Start
 bashFlashCards.start()   
+
