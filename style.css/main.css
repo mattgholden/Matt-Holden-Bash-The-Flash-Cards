@@ -27,6 +27,7 @@ body{
    margin: 0 auto;
 }
 
+/* use of divs and classes */
 .question{
     background-color: #F1F1F1;
     opacity: 0;
