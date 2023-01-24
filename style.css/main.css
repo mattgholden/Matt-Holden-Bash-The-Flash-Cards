@@ -3,7 +3,8 @@ h1{
     text-align: center;
     text-decoration: underline;
     font-family: 'Red Hat Mono', monospace;
-    background-color: ghostwhite;
+    /* background-color: ghostwhite;
+    opacity: 0.6; */
 }
 
 body{
